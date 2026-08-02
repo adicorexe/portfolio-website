@@ -214,13 +214,14 @@ your live Vercel URL so the backend accepts requests from your deployed frontend
 
 ## 📸 Screenshots
 
-> Add screenshots of your deployed site here once available.
+### Hero Section
+![Hero](screenshots/hero.png)
 
-- Hero Section: `screenshots/hero.png`
-- Projects Section: `screenshots/projects.png`
-- Contact Section: `screenshots/contact.png`
+### Projects Section
+![Projects](screenshots/projects.png)
 
----
+### Contact Section
+![Contact](screenshots/contact.png)
 
 ## 📄 License
 
