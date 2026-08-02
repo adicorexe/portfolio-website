@@ -1,0 +1,21 @@
+{
+  "name": "Aditya Raj Saxena | Full Stack Developer Portfolio",
+  "short_name": "ARS Portfolio",
+  "description": "Portfolio website of Aditya Raj Saxena, a Full Stack Developer specializing in web development, Python, AI and UI/UX design.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Raj Saxena | Full Stack Developer</title>
+  <meta name="description" content="Aditya Raj Saxena - Full Stack Developer specializing in Frontend, Backend, Python, AI and UI/UX Design. Explore my projects, skills and experience." />
+  <meta name="keywords" content="Aditya Raj Saxena, Full Stack Developer, Frontend Developer, Web Developer, Python, AI, Portfolio, React, Node.js" />
+  <meta name="author" content="Aditya Raj Saxena" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aditya Raj Saxena | Full Stack Developer" />
+  <meta property="og:description" content="Explore the portfolio of Aditya Raj Saxena — Full Stack Developer, Python & AI Enthusiast, UI/UX Designer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <meta property="og:url" content="https://adityarajsaxena.dev/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aditya Raj Saxena | Full Stack Developer" />
+  <meta name="twitter:description" content="Explore the portfolio of Aditya Raj Saxena — Full Stack Developer, Python & AI Enthusiast, UI/UX Designer." />
+  <meta name="twitter:image" content="assets/images/og-image.jpg" />
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="logo">AR<span>S.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="floating-shape shape-square"></div>
+    <div class="floating-shape shape-circle"></div>
+    <div class="floating-shape shape-triangle"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-text reveal-up">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Aditya Raj Saxena</h1>
+        <h2 class="hero-role">
+          I'm a <span id="typingText" class="typing-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          I build clean, functional and delightful digital experiences —
+          from pixel-perfect interfaces to robust backend systems.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="assets/resume.pdf" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <i class="fa-solid fa-diagram-project"></i> View Projects
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/adityarajsaxena" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/adityarajsaxena" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:aditya.raj.saxena@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-up delay-2">
+        <div class="hero-image-frame">
+          <div class="hero-image-placeholder">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <div class="glass-badge badge-1"><i class="fa-brands fa-react"></i></div>
+          <div class="glass-badge badge-2"><i class="fa-brands fa-node-js"></i></div>
+          <div class="glass-badge badge-3"><i class="fa-brands fa-python"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">Get To Know Me</p>
+      <h2 class="section-title reveal-up">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="about-image-frame">
+            <div class="about-image-placeholder">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <p class="about-bio">
+            Passionate about learning, researching cutting-edge technologies, and building
+            innovative solutions. I'm a Full Stack Developer with interests in Frontend
+            Development, Web Development, Python, AI, UI/UX and Graphic Design.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="about-info-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Noida, Uttar Pradesh, India</p>
+              </div>
+            </div>
+            <div class="about-info-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <h4>Experience</h4>
+                <p>Full Stack Development Intern</p>
+              </div>
+            </div>
+            <div class="about-info-card">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h4>Availability</h4>
+                <p>Open to opportunities</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="assets/resume.pdf" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- ===================== STATISTICS ===================== -->
+      <div class="stats-grid reveal-up">
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="5">0</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="6">0</h3>
+          <p>Certificates</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="15">0</h3>
+          <p>Technologies</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="1">0</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">What I Work With</p>
+      <h2 class="section-title reveal-up">My Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal-up">
+          <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>HTML</span><span>95%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>CSS</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>JavaScript</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>React.js</span><span>80%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up delay-1">
+          <h3><i class="fa-solid fa-server"></i> Backend</h3>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>Node.js</span><span>80%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>Express.js</span><span>78%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="78"></div></div>
+          </div>
+          <h3 class="mt"><i class="fa-solid fa-code"></i> Programming</h3>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>Python</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>Java</span><span>75%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up delay-2">
+          <h3><i class="fa-solid fa-database"></i> Database</h3>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>MongoDB</span><span>78%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="78"></div></div>
+          </div>
+          <h3 class="mt"><i class="fa-solid fa-toolbox"></i> Tools</h3>
+          <div class="tool-badges">
+            <span><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span><i class="fa-brands fa-github"></i> GitHub</span>
+            <span><i class="fa-solid fa-code"></i> VS Code</span>
+            <span><i class="fa-brands fa-figma"></i> Figma</span>
+            <span><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up delay-3">
+          <h3><i class="fa-solid fa-pen-nib"></i> Design</h3>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>UI/UX Design</span><span>82%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item-head"><span>Graphic Design</span><span>80%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE SECTION ===================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">My Journey</p>
+      <h2 class="section-title reveal-up">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">May 2026 – Present</span>
+            <h3>Full Stack Developer Intern</h3>
+            <h4>UniConverge Technologies</h4>
+            <p>
+              Working as a Full Stack Development Intern in collaboration with
+              Upskill Campus and UniConverge Technologies.
+            </p>
+            <ul class="timeline-list">
+              <li>Building responsive websites</li>
+              <li>Frontend Development</li>
+              <li>Backend APIs</li>
+              <li>Database Integration</li>
+              <li>Learning Full Stack Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">My Work</p>
+      <h2 class="section-title reveal-up">Featured Projects</h2>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Injected by main.js / fetched from backend, static fallback below -->
+        <div class="project-card reveal-up">
+          <div class="project-image"><i class="fa-solid fa-globe"></i></div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>A full stack developer portfolio with a Node.js + MongoDB backend and a pure CSS glassmorphism frontend.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-1">
+          <div class="project-image"><i class="fa-solid fa-gamepad"></i></div>
+          <div class="project-body">
+            <h3>Python Quiz Game</h3>
+            <p>An interactive command-line quiz game built with Python featuring score tracking and multiple categories.</p>
+            <div class="tech-tags"><span>Python</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-2">
+          <div class="project-image"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="project-body">
+            <h3>Student Management System</h3>
+            <p>A desktop application to manage student records, grades and attendance built with Java and MySQL.</p>
+            <div class="tech-tags"><span>Java</span><span>MySQL</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-3">
+          <div class="project-image"><i class="fa-solid fa-cloud-sun"></i></div>
+          <div class="project-body">
+            <h3>Weather App</h3>
+            <p>A responsive weather forecast application that consumes a public weather API in real time.</p>
+            <div class="tech-tags"><span>JavaScript</span><span>API</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up delay-4">
+          <div class="project-image"><i class="fa-solid fa-list-check"></i></div>
+          <div class="project-body">
+            <h3>Task Manager</h3>
+            <p>A full stack task management app with authentication, CRUD operations and a MongoDB backend.</p>
+            <div class="tech-tags"><span>Node.js</span><span>MongoDB</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION SECTION ===================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">Academic Background</p>
+      <h2 class="section-title reveal-up">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-date">2024 – 2028</span>
+            <h3>Bachelor of Technology — Computer Science</h3>
+            <h4>IILM University, Greater Noida</h4>
+            <p>Pursuing a B.Tech in Computer Science with a focus on full stack web development, AI and software engineering fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS SECTION ===================== -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">Verified Learning</p>
+      <h2 class="section-title reveal-up">Certifications</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal-up">
+          <i class="fa-brands fa-python cert-icon"></i>
+          <h4>Programming with Python</h4>
+          <p>Professional Certificate</p>
+        </div>
+        <div class="cert-card reveal-up delay-1">
+          <i class="fa-solid fa-leaf cert-icon"></i>
+          <h4>MongoDB Certificate</h4>
+          <p>Database Fundamentals</p>
+        </div>
+        <div class="cert-card reveal-up delay-2">
+          <i class="fa-brands fa-react cert-icon"></i>
+          <h4>ReactJS Certificate</h4>
+          <p>Frontend Development</p>
+        </div>
+        <div class="cert-card reveal-up delay-3">
+          <i class="fa-brands fa-js cert-icon"></i>
+          <h4>JavaScript Certificate</h4>
+          <p>Core Programming</p>
+        </div>
+        <div class="cert-card reveal-up delay-4">
+          <i class="fa-solid fa-globe cert-icon"></i>
+          <h4>Web Development Certificate</h4>
+          <p>Full Stack Fundamentals</p>
+        </div>
+        <div class="cert-card reveal-up delay-5">
+          <i class="fa-solid fa-pen-ruler cert-icon"></i>
+          <h4>UI/UX Designathon</h4>
+          <p>Participation Certificate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES SECTION ===================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">What I Offer</p>
+      <h2 class="section-title reveal-up">Services</h2>
+
+      <div class="services-grid">
+        <div class="service-card reveal-up">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, accessible and performant user interfaces with modern HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="service-card reveal-up delay-1">
+          <i class="fa-solid fa-server"></i>
+          <h3>Backend Development</h3>
+          <p>Designing robust REST APIs and server-side logic using Node.js, Express and MongoDB.</p>
+        </div>
+        <div class="service-card reveal-up delay-2">
+          <i class="fa-solid fa-layer-group"></i>
+          <h3>Full Stack Development</h3>
+          <p>End-to-end delivery of web applications — from database design to deployment.</p>
+        </div>
+        <div class="service-card reveal-up delay-3">
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h3>UI/UX Design</h3>
+          <p>Crafting intuitive, user-centered interfaces backed by research and clean visual design.</p>
+        </div>
+        <div class="service-card reveal-up delay-4">
+          <i class="fa-solid fa-palette"></i>
+          <h3>Graphic Design</h3>
+          <p>Creating brand assets, illustrations and marketing visuals with tools like Figma and Canva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS SECTION ===================== -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">Kind Words</p>
+      <h2 class="section-title reveal-up">Testimonials</h2>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal-up">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>"Aditya is a quick learner with a strong grasp of full stack fundamentals. He consistently delivered clean, well-structured code during his internship."</p>
+          <div class="testimonial-author">
+            <div class="avatar">RK</div>
+            <div>
+              <h4>Rohit Kumar</h4>
+              <span>Engineering Lead, UniConverge Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up delay-1">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>"Great eye for design and a genuine problem solver. Aditya's attention to detail on the frontend really stood out to the team."</p>
+          <div class="testimonial-author">
+            <div class="avatar">SP</div>
+            <div>
+              <h4>Sneha Patil</h4>
+              <span>Mentor, Upskill Campus</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up delay-2">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>"Reliable, curious and easy to collaborate with. Aditya brings both technical skill and a good design sense to every project."</p>
+          <div class="testimonial-author">
+            <div class="avatar">AM</div>
+            <div>
+              <h4>Ananya Mehta</h4>
+              <span>Peer Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">Let's Connect</p>
+      <h2 class="section-title reveal-up">Contact Me</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p>
+            Have a project in mind, an opportunity to share, or just want to say hi?
+            My inbox is always open — I'll get back to you as soon as I can.
+          </p>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Noida, Uttar Pradesh, India</span>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>aditya.raj.saxena@example.com</span>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>linkedin.com/in/adityarajsaxena</span>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-brands fa-github"></i>
+            <span>github.com/adityarajsaxena</span>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal-right" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit more..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader" style="display:none;"></span>
+          </button>
+
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">AR<span>S.</span></a>
+        <p>Full Stack Developer building thoughtful, functional web experiences.</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/adityarajsaxena" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/adityarajsaxena" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:aditya.raj.saxena@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="about.html">About Page</a>
+        <a href="projects.html">Projects Page</a>
+        <a href="contact.html">Contact Page</a>
+        <a href="assets/resume.pdf" download>Resume</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Aditya Raj Saxena. All rights reserved.</p>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/typing.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

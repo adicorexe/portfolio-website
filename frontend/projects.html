@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Aditya Raj Saxena</title>
+  <meta name="description" content="Explore projects built by Aditya Raj Saxena spanning full stack web apps, Python programs and Java applications." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-theme="dark">
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">AR<span>S.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="navbar-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow reveal-up">My Work</p>
+      <h1 class="section-title reveal-up">All Projects</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="projects-grid" id="allProjectsGrid">
+        <p class="loading-text">Loading projects...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">AR<span>S.</span></a>
+        <p>Full Stack Developer building thoughtful, functional web experiences.</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/adityarajsaxena" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/adityarajsaxena" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:aditya.raj.saxena@example.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; <span id="year"></span> Aditya Raj Saxena. All rights reserved.</p></div>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </footer>
+
+  <script src="js/scroll.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Fetch projects from the backend API and render them.
+    // Falls back to a static message if the API is unreachable.
+    const API_BASE_URL = window.PORTFOLIO_API_BASE || "http://localhost:5000/api";
+
+    async function loadAllProjects() {
+      const grid = document.getElementById("allProjectsGrid");
+      try {
+        const res = await fetch(`${API_BASE_URL}/projects`);
+        if (!res.ok) throw new Error("Request failed");
+        const data = await res.json();
+        const projects = data.data || [];
+
+        if (!projects.length) {
+          grid.innerHTML = `<p class="loading-text">No projects found yet. Check back soon!</p>`;
+          return;
+        }
+
+        grid.innerHTML = projects.map(p => `
+          <div class="project-card reveal-up">
+            <div class="project-image"><i class="fa-solid fa-code"></i></div>
+            <div class="project-body">
+              <h3>${p.title}</h3>
+              <p>${p.description}</p>
+              <div class="tech-tags">
+                ${(p.techStack || []).map(t => `<span>${t}</span>`).join("")}
+              </div>
+              <div class="project-links">
+                ${p.liveDemo ? `<a href="${p.liveDemo}" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>` : ""}
+                ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>` : ""}
+              </div>
+            </div>
+          </div>
+        `).join("");
+      } catch (err) {
+        grid.innerHTML = `<p class="loading-text">Couldn't load projects from the server right now. Please try again later.</p>`;
+        console.error("Failed to load projects:", err);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadAllProjects);
+  </script>
+</body>
+</html>
