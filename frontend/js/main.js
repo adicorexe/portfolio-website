@@ -5,7 +5,7 @@
    ========================================================================== */
 
 // Base URL for the backend API. Update this after deploying the backend.
-window.PORTFOLIO_API_BASE = window.PORTFOLIO_API_BASE || "http://localhost:5000/api";
+window.PORTFOLIO_API_BASE = window.PORTFOLIO_API_BASE || "https://portfolio-backend-wupp.onrender.com/api";
 
 document.addEventListener("DOMContentLoaded", () => {
   hidePreloader();
