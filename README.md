@@ -214,10 +214,10 @@ your live Vercel URL so the backend accepts requests from your deployed frontend
 
 ## 📸 Screenshots
 
-### Hero Section
+### Home Page Section
 ![Hero](screenshots/hero.png)
 
-### Projects Section
+### Skills Section
 ![Projects](screenshots/projects.png)
 
 ### Contact Section
